@@ -80,13 +80,3 @@ class QACaptchaQuestion extends DataObject {
 		return $fields;
 	}
 }
-
-class QACaptchaQuestion_Admin extends ModelAdmin {
-	static $managed_models = array(
-		'QACaptchaQuestion'
-	);
-	
-	static $url_segment = 'qacaptcha';
-	static $menu_title = 'Captcha';
-}
-
