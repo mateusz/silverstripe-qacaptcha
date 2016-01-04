@@ -1,9 +1,10 @@
 <?php
-class QACaptchaAdmin extends ModelAdmin {
-	
-	static $managed_models = array('QACaptchaQuestion');
+class QACaptchaAdmin extends ModelAdmin
+{
+    
+    public static $managed_models = array('QACaptchaQuestion');
 
-	static $url_segment = 'qacaptcha';
-	
-	static $menu_title = 'Captcha Questions';
+    public static $url_segment = 'qacaptcha';
+    
+    public static $menu_title = 'Captcha Questions';
 }
