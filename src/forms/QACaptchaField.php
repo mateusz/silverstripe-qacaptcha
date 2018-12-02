@@ -26,8 +26,10 @@ class QACaptchaField extends FormField
      */
     public function getRandomQuestion()
     {
-        $request = Injector::inst()->get(HTTPRequest::class);
+        $controller = Controller::curr();
+        $request = $controller->getRequest();
         $session = $request->getSession();
+
         $qid = $session->get('QACaptchaField.Retry');
         if (isset($qid) && $qid) {
             // Retry the same question
