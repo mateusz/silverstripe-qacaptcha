@@ -1,20 +1,31 @@
 {
-        "name": "mateusz/silverstripe-qacaptcha",
-        "description": "Form field and validator to check for spam by asking user-defined questions",
-        "type": "silverstripe-module",
-        "keywords": ["silverstripe","form","captcha"],
-        "license": "BSD-3-Clause",
-        "authors": [
-                {
-                        "name": "Mateusz Uzdowski",
-                        "email": "mateusz@silverstripe.com"
-                }
-        ],
-        "require": {
-                "silverstripe/framework": ">=2.4,<3.1",
-                "silverstripe/spamprotection": "*"
-        },
-        "extra": {
-                "installer-name": "qacaptcha"
+    "name": "mateusz/silverstripe-qacaptcha",
+    "description": "Form field and validator to check for spam by asking user-defined questions",
+    "type": "silverstripe-vendormodule",
+    "keywords": ["silverstripe","form","captcha"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Mateusz Uzdowski",
+            "email": "mateusz@silverstripe.com"
         }
+    ],
+    "require": {
+        "silverstripe/framework": "^4.0",
+        "silverstripe/cms": "^4.0",
+        "silverstripe/admin": "^1.0",
+        "silverstripe/spamprotection": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mateusz\\QACaptcha\\": "src/",
+            "Mateusz\\QACaptcha\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "installer-name": "qacaptcha",
+        "expose": [
+            "client/js"
+        ]
+    }
 }

@@ -1,7 +1,7 @@
-QACaptchaQuestion:
-	question1:
-		Question: How many letters are there in the word TEST?
-		Answers: FoUr,about four,,,
-	question2:
-		Question: How much is three plus two?
-		Answers: five,about five
+Mateusz\QACaptcha\Models\QACaptchaQuestion:
+  question1:
+    Question: How many letters are there in the word TEST?
+    Answers: FoUr,about four,,,
+  question2:
+    Question: How much is three plus two?
+    Answers: five,about five
